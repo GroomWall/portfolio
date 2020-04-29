@@ -1,0 +1,120 @@
+/* COLORS
+#F5F5F5 
+#3C3C3C 
+#6CCFF6 
+#FAFF70 
+#00B2CA 
+#FBD1A2
+#FFB7FF
+#826AED
+*/
+
+
+/*-------------------------Global Styles------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #3C3C3C;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+img {
+    width: 500px;
+}
+
+h1 {
+	font-size: 5em;
+	line-height: 1;
+}
+
+h2 {
+	font-size: 2em;
+}
+h1,h2 {
+	font-family: 'Caveat', cursive;
+	font-weight: 400;
+	margin: 0;
+}
+
+.container {
+    position: relative;
+    background-color: wheat;
+    height: 100%;
+    width: 100%;
+}
+
+.hyperlink {
+    color: #826AED;
+}
+
+.hyperlink:hover {
+    text-decoration: none;
+}
+
+.content-wrap {
+	width: 900px;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+/*-------------------------Profile------------------------------*/
+header {
+    background: #003554;
+    color: #fefae0;
+}
+
+header img {
+	width: 25%;
+	margin-right: 2%;
+}
+
+header p, header h1, header h2 {
+	padding: 13px 0;
+	/*text-align: center;*/
+}
+
+.header-wrap{
+	width: 70%;
+	display: inline-block;
+}
+/*-------------------------Projects------------------------------*/
+.portfolio {
+    background: #ffffff;
+}
+
+.portfolio .btn {
+    color: #FAFF70;
+    background: #3C3C3C;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: color 0.5s, background 0.5s;
+    display: inline-block;
+}
+
+.portfolio .btn:hover {
+    background: rgba(60, 60, 60, 0.5);
+}
+
+
+/*-------------------------Work Experience------------------------------*/
+.work {
+    background: #FAFF70;
+}
+
+/*-------------------------Education------------------------------*/
+.education {
+    background: #F5F5F5;
+}
+
+/*-------------------------Contact Info------------------------------*/
+.contacts {
+    background: #6CCFF6;
+}
