@@ -18,6 +18,13 @@
     box-sizing: border-box;
 }
 
+/* ---------The Box Model Fix----------*/
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 body {
     color: #3C3C3C;
     font-family: 'Montserrat', sans-serif;
@@ -30,17 +37,20 @@ img {
 }
 
 h1 {
-	font-size: 5em;
-	line-height: 1;
+    font-size: 5em;
+    line-height: 1;
+}
+
+h1,
+h2 {
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    margin: 0;
 }
 
 h2 {
-	font-size: 2em;
-}
-h1,h2 {
-	font-family: 'Caveat', cursive;
-	font-weight: 400;
-	margin: 0;
+    font-size: 3em;
+    line-height: 1.2;
 }
 
 .container {
@@ -59,9 +69,9 @@ h1,h2 {
 }
 
 .content-wrap {
-	width: 900px;
-	margin: 0 auto;
-	padding: 20px 0;
+    width: 900px;
+    margin: 0 auto;
+    padding: 20px 0;
 }
 
 /*-------------------------Profile------------------------------*/
@@ -71,27 +81,34 @@ header {
 }
 
 header img {
-	width: 25%;
-	margin-right: 2%;
+    width: 25%;
+    margin-right: 2%;
 }
 
-header p, header h1, header h2 {
-	padding: 13px 0;
-	/*text-align: center;*/
+header p,
+header h1,
+header h2 {
+    padding: 13px 0;
 }
 
-.header-wrap{
-	width: 70%;
-	display: inline-block;
+.header-wrap {
+    width: 70%;
+    display: inline-block;
 }
+
+.header-wrap h1 {
+    margin-left: -25%;
+}
+
 /*-------------------------Projects------------------------------*/
 .portfolio {
     background: #ffffff;
 }
 
 .portfolio .btn {
-    color: #FAFF70;
-    background: #3C3C3C;
+    color: #fefae0;
+    border: 1px solid #003554;
+    background: #003554;
     padding: 5px;
     text-decoration: none;
     border-radius: 8px;
@@ -100,7 +117,34 @@ header p, header h1, header h2 {
 }
 
 .portfolio .btn:hover {
-    background: rgba(60, 60, 60, 0.5);
+    background: none;
+    color: #003554;
+    /*background: rgba(0,53,84, 0.6);*/
+}
+
+.project-item {
+    overflow: hidden;
+    border-bottom: 1px dashed #3C3C3C;
+    padding: 25px 0;
+}
+
+.project-item img {
+    float: left;
+    margin-right: 10px;
+}
+
+.project-item h2 {
+    text-align: center;
+}
+
+.content-wrap h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.content-wrap>p {
+    margin: 10px 0;
+    text-align: center;
 }
 
 
@@ -109,12 +153,53 @@ header p, header h1, header h2 {
     background: #FAFF70;
 }
 
+.work h2 {
+    text-align: center;
+}
+
+.work-section {
+    margin-top: 20px;
+    padding: 10px;
+    background: #FFE031;
+    box-shadow: 0px 0px 5px 2px #AE7400;
+}
+
+.work-section p{
+    margin-top: 15px;
+}
+
+.contributions {
+    margin-left: 50px;
+}
 /*-------------------------Education------------------------------*/
 .education {
-    background: #F5F5F5;
+    background: #C7E868;
 }
 
 /*-------------------------Contact Info------------------------------*/
 .contacts {
-    background: #6CCFF6;
+    background: #fefae0;
+}
+
+.contacts h1 {
+    color: #3C3C3C;
+}
+
+.logo {
+    display: inline-block;
+    margin-bottom: -5px;
+    width: 20px;
+    padding-right: 10px;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.link {
+    padding: 15px;
+    display: inline-block;
 }
