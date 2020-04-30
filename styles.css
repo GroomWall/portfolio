@@ -74,6 +74,10 @@ ul {
     padding: 20px 0;
 }
 
+.content-wrap h1 {
+    text-align: center;
+}
+
 .shader {
     background: #fff;
     padding: 10px;
@@ -105,35 +109,37 @@ header {
 }
 
 #profile-pic {
-    width: 25%;
-    margin-right: 2%;
+    max-width: 112%;
 }
 
-header p,
 header h1,
 header h2 {
-    padding: 13px 0;
+    padding: 10px 10px 0 0;
 }
 
-.header-wrap {
-    width: 70%;
-    display: inline-block;
-}
-
-.header-wrap h1 {
-    margin-left: -25%;
+.header-wrap h1{
+    text-align: left;
 }
 
 .lang {
-    display: inline-block;
+    position: absolute;
     padding: 35px 30px 0 0;
-    float: right;
+    right: 0;
     text-align: center;
 }
 
-.flag{
+.flag {
     padding: 40px;
 }
+
+.content-wrap.content-header {
+    display: grid;
+    width: 900px;
+    grid-template-columns: 1fr 4fr;
+    column-gap: 40px;
+    align-items: end;
+}
+
 /*-------------------------Projects------------------------------*/
 .portfolio {
     background: #ffffff;
@@ -142,6 +148,7 @@ header h2 {
 #pizza {
     width: 400px;
 }
+
 .portfolio .btn {
     color: #fefae0;
     border: 1px solid #003554;
@@ -174,10 +181,6 @@ header h2 {
     text-align: center;
 }
 
-.content-wrap h1 {
-    text-align: center;
-    margin-bottom: 15px;
-}
 
 .content-wrap>p {
     margin: 10px 0;
