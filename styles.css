@@ -86,9 +86,11 @@ ul {
     transition: box-shadow 83ms;
     border-radius: 2px;
 }
+
 .li-marker {
     margin-bottom: 10px;
 }
+
 .li-marker:before {
     background-image: url(img/grad-hat.svg);
     background-size: 17px 17px;
@@ -99,6 +101,7 @@ ul {
     margin: 0 10px -5px -27px;
     content: "";
 }
+
 /*-------------------------Profile------------------------------*/
 header {
     background: #003554;
@@ -210,7 +213,7 @@ header h2 {
     margin-left: 50px;
 }
 
-.education h2{
+.education h2 {
     text-align: center;
 }
 
