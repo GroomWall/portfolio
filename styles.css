@@ -32,10 +32,6 @@ body {
     line-height: 1.5;
 }
 
-img {
-    width: 500px;
-}
-
 h1 {
     font-size: 5em;
     line-height: 1;
@@ -108,7 +104,7 @@ header {
     color: #fefae0;
 }
 
-header img {
+#profile-pic {
     width: 25%;
     margin-right: 2%;
 }
@@ -143,6 +139,9 @@ header h2 {
     background: #ffffff;
 }
 
+#pizza {
+    width: 400px;
+}
 .portfolio .btn {
     color: #fefae0;
     border: 1px solid #003554;
