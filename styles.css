@@ -78,6 +78,27 @@ ul {
     padding: 20px 0;
 }
 
+.shader {
+    background: #fff;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .15), 0 2px 3px rgba(0, 0, 0, .2);
+    transition: box-shadow 83ms;
+    border-radius: 2px;
+}
+.li-marker {
+    margin-bottom: 10px;
+}
+.li-marker:before {
+    background-image: url(img/grad-hat.svg);
+    background-size: 17px 17px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin: 0 10px -5px -27px;
+    content: "";
+}
 /*-------------------------Profile------------------------------*/
 header {
     background: #003554;
@@ -153,18 +174,9 @@ header h2 {
 
 
 /*-------------------------Work Experience------------------------------*/
-.li-pointed:before {
-    background-image: url(img/grad-hat.svg);
-    background-size: 17px 17px;
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 17px; 
-    height: 17px;
-    margin:0 0 -5px -20px;
-    content:"";
-}
+
 .work {
-    background: #FAFF70;
+    background: #EEE3AB;
 }
 
 .work h2 {
@@ -176,12 +188,6 @@ header h2 {
 }
 
 .work-section {
-    margin-top: 20px;
-    padding: 10px;
-    background: #fff;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, .15), 0 2px 3px rgba(0, 0, 0, .2);
-    transition: box-shadow 83ms;
-    border-radius: 2px;
     display: grid;
     grid-template-columns: 1fr 2fr;
     column-gap: 20px;
@@ -199,6 +205,24 @@ header h2 {
 .education {
     background: #C7E868;
 }
+
+.li-education {
+    margin-left: 50px;
+}
+
+.education h2{
+    text-align: center;
+}
+
+.education-item p,
+.education-item h3 {
+    padding: 10px 0;
+}
+
+.education-item span {
+    float: right;
+}
+
 
 /*-------------------------Contact Info------------------------------*/
 .contacts {
