@@ -140,14 +140,22 @@ header h2 {
 }
 
 .lang p {
-    font-size: 0.5em;
+    font-size: 1em;
 }
 
 .flag {
-    padding: 40px;
+    padding: 10px;
+    width: 20px;
+    color: white;
+    text-decoration: none;
 }
 
-
+.flag img {
+    display: inline-block;
+    margin-bottom: -10px;
+    margin-right: 5px;
+    width: 30px;
+}
 
 /*-------------------------Projects------------------------------*/
 .portfolio {
@@ -242,6 +250,7 @@ header h2 {
 
 .contacts h1 {
     color: #3C3C3C;
+    padding-bottom: 10px;
 }
 
 .logo {
@@ -289,10 +298,6 @@ header h2 {
         padding: 35px 30px 0 0;
         right: 0;
         text-align: center;
-    }
-
-    .lang p {
-        font-size: 1em;
     }
 
     .project-item {
@@ -370,6 +375,24 @@ header h2 {
     }
 }
 
+@media screen and (max-width: 670px) {
+
+    .lang p,
+    .lang a {
+        display: block;
+        font-size: 0.5em;
+    }
+
+    .flag img {
+        width: 15px;
+        margin-bottom: -4px;
+    }
+
+    .flag {
+        width: 40px;
+    }
+}
+
 @media screen and (max-width: 560px) {
     h1 {
         font-size: 2.2em;
@@ -402,7 +425,8 @@ header h2 {
     }
 
     .flag {
-        padding: 0px;
+        float:right;
+        padding: 5px;
     }
 }
 
@@ -410,7 +434,7 @@ header h2 {
 
     header h1,
     header h2 {
-        padding: 0px 10px 20px 0;
+        padding: 20px 10px 5px 0;
     }
 
     h1 {
