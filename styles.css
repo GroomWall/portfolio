@@ -32,11 +32,6 @@ body {
     line-height: 1.5;
 }
 
-h1 {
-    font-size: 5em;
-    line-height: 0.75;
-}
-
 h1,
 h2 {
     font-family: 'Caveat', cursive;
@@ -44,12 +39,15 @@ h2 {
     margin: 0;
 }
 
-h2 {
+h1 {
     font-size: 3em;
-    line-height: 1.2;
 }
 
-h3 + p {
+h2 {
+    font-size: 2em;
+}
+
+h3+p {
     font-style: italic;
 }
 
@@ -74,9 +72,10 @@ ul {
 }
 
 .content-wrap {
-    width: 900px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 25px 0;
+    width: 85%;
 }
 
 .content-wrap h1 {
@@ -84,14 +83,10 @@ ul {
 }
 
 .content-wrap.content-header {
-    display: grid;
-    width: 900px;
-    grid-template-columns: 1fr 4fr;
-    column-gap: 40px;
-    align-items: end;
+    max-width: 900px;
 }
 
-.content-wrap > p {
+.content-wrap>p {
     margin: 10px 0 0 0;
     text-align: center;
 }
@@ -105,18 +100,14 @@ ul {
     border-radius: 2px;
 }
 
-.li-marker {
-    margin-bottom: 10px;
-}
-
 .li-marker:before {
     background-image: url(img/grad-hat.svg);
-    background-size: 17px 17px;
+    background-size: 10px 10px;
     background-repeat: no-repeat;
     display: inline-block;
-    width: 17px;
-    height: 17px;
-    margin: 0 10px -5px -27px;
+    width: 10px;
+    height: 10px;
+    margin: 1px 10px 0px -21px;
     content: "";
 }
 
@@ -127,23 +118,29 @@ header {
 }
 
 #profile-pic {
-    max-width: 112%;
+    /*    display: none;*/
+    float: left;
+    width: 100px;
 }
 
 header h1,
 header h2 {
-    padding: 10px 10px 0 0;
+    padding: 10px 10px 10px 0;
 }
 
-.header-wrap h1{
+.header-wrap h1 {
     text-align: left;
 }
 
 .lang {
     position: absolute;
-    padding: 35px 30px 0 0;
+    padding: 20px 10px 0 0;
     right: 0;
     text-align: center;
+}
+
+.lang p {
+    font-size: 0.5em;
 }
 
 .flag {
@@ -174,10 +171,6 @@ header h2 {
 }
 
 .project-item {
-    overflow: hidden;
-    display: grid;
-    grid-template-columns:1fr 1fr;
-    grid-gap: 20px;
     border-bottom: 1px dashed #3C3C3C;
     padding: 25px 0 10px 0;
 }
@@ -193,6 +186,7 @@ header h2 {
 .project-description p {
     margin-bottom: 10px;
 }
+
 /*-------------------------Work Experience------------------------------*/
 
 .work {
@@ -207,12 +201,6 @@ header h2 {
     margin-bottom: 15px;
 }
 
-.work-section {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 20px;
-}
-
 .work-section p {
     margin-bottom: 15px;
 }
@@ -223,7 +211,10 @@ header h2 {
 
 /*-------------------------Education------------------------------*/
 .education {
-    background: #C7E868;
+    background: #B9F978;
+    background-image: url(img/education.jpg);
+    background-size: cover;
+    background-position: top right;
 }
 
 .li-education {
@@ -236,7 +227,7 @@ header h2 {
 
 .education-item p,
 .education-item h3 {
-    padding: 10px 0;
+    padding: 3px 0;
 }
 
 .education-item span {
@@ -268,6 +259,186 @@ header h2 {
 }
 
 .link {
+    font-size: 0.7em;
     padding: 15px;
     display: inline-block;
+}
+
+/*------------------Responsive----------------*/
+@media screen and (min-width: 750px) {
+    footer {
+        text-align: center;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 5em;
+        line-height: 0.75;
+    }
+
+    h2 {
+        font-size: 3em;
+        line-height: 1.2;
+    }
+
+    .lang {
+        position: absolute;
+        padding: 35px 30px 0 0;
+        right: 0;
+        text-align: center;
+    }
+
+    .lang p {
+        font-size: 1em;
+    }
+
+    .project-item {
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    .work-section {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+    }
+
+    .education-item p,
+    .education-item h3 {
+        padding: 10px 0;
+    }
+
+    .content-wrap.content-header {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        column-gap: 40px;
+        align-items: end;
+    }
+
+    .link {
+        font-size: 1em;
+    }
+
+    .li-marker {
+        margin-bottom: 10px;
+    }
+
+    .li-marker:before {
+        background-image: url(img/grad-hat.svg);
+        background-size: 17px 17px;
+        background-repeat: no-repeat;
+        display: inline-block;
+        width: 17px;
+        height: 17px;
+        margin: 0 10px -5px -27px;
+        content: "";
+    }
+
+    #profile-pic {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    h1 {
+        font-size: 4em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    #profile-pic {
+        float: left;
+        max-width: 100%;
+        margin-right: 10px;
+    }
+
+    header h1,
+    header h2 {
+        padding: 0px 10px 10px 0;
+    }
+
+    .content-wrap.content-header {
+        grid-template-columns: 1.1fr 4fr;
+        grid-gap: 10px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    h1 {
+        font-size: 2.2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .header-wrap p {
+        font-size: 1em;
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .header-wrap p {
+        padding-top: 0px;
+    }
+
+    .lang {
+        position: absolute;
+        padding: 5px 10px 0 0;
+        right: 0;
+        text-align: center;
+    }
+
+    .lang p {
+        font-size: 0.5em;
+    }
+
+    .flag {
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+
+    header h1,
+    header h2 {
+        padding: 14px 10px 10px 0;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    h1 {
+        font-size: 1.7em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    h3 {
+        font-size: 0.8em;
+    }
+
+    p,
+    li {
+        font-size: 0.5em;
+    }
+
+    .logo {
+        width: 10px;
+        height: 10px;
+        margin-bottom: -3px;
+    }
+
+    footer .logo {
+        margin-bottom: -4px;
+    }
 }
