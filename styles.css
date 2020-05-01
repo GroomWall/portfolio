@@ -410,11 +410,26 @@ header h2 {
 
     header h1,
     header h2 {
-        padding: 14px 10px 10px 0;
+        padding: 0px 10px 20px 0;
     }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 330px) {
+
+    header h1,
+    header h2 {
+        padding: 20px 10px 10px 0;
+    }
+
     h1 {
         font-size: 1.7em;
     }
@@ -440,5 +455,19 @@ header h2 {
 
     footer .logo {
         margin-bottom: -4px;
+    }
+}
+
+@media screen and (max-width: 305px) {
+    .header-wrap p {
+        padding-top: 0;
+    }
+
+    .header-wrap h1 {
+        margin-bottom: -20px;
+    }
+
+    .header-wrap h2 {
+        padding-top: 50px;
     }
 }
