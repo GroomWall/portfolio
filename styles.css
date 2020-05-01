@@ -219,7 +219,7 @@ header h2 {
 
 /*-------------------------Education------------------------------*/
 .education {
-    background: #576472;
+    background: #D0DDE0;
 }
 
 .li-education {
@@ -231,7 +231,7 @@ header h2 {
 }
 
 .education h1 {
-    color: #fefae0;
+    color: #3C3C3C;
 }
 
 .education-item p,
@@ -405,15 +405,11 @@ header h2 {
 
     .header-wrap p {
         font-size: 1em;
-        padding-top: 30px;
+        /*padding-top: 30px;*/
     }
 }
 
 @media screen and (max-width: 520px) {
-    .header-wrap p {
-        padding-top: 0px;
-    }
-
     .lang {
         position: absolute;
         padding: 5px 10px 0 0;
@@ -431,11 +427,21 @@ header h2 {
     }
 }
 
+@media screen and (max-width: 440px) {
+    .header-wrap p {
+        margin-top: -10px;
+    }
+}
+
 @media screen and (max-width: 370px) {
 
     header h1,
     header h2 {
-        padding: 20px 10px 5px 0;
+        padding: 15px 10px 10px 0;
+    }
+
+    .header-wrap p {
+        padding-top: 20px;
     }
 
     h1 {
@@ -452,7 +458,7 @@ header h2 {
 
     header h1,
     header h2 {
-        padding: 20px 10px 10px 0;
+        padding: 25px 8px 0px 0;
     }
 
     h1 {
