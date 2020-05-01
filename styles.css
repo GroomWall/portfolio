@@ -158,21 +158,22 @@ header h2 {
 }
 
 .portfolio .btn {
-    color: #EDFFD9;
-    border: 1px solid #003554;
-    background: #003554;
+    color: #fff;
+    border: 1px solid #fff;
+    background: none;
     padding: 5px;
     text-decoration: none;
     border-radius: 8px;
     transition: color 0.5s, background 0.5s;
     position: relative;
-    margin-top: 10px;
-    left: 33%;
+    bottom: 90px;
+    left: 5px;
 }
 
 .portfolio .btn:hover {
     background: none;
     color: #003554;
+    border: 1px solid #003554;
 }
 
 .project-item {
