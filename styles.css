@@ -49,6 +49,11 @@ h2 {
     line-height: 1.2;
 }
 
+h3 + p {
+    font-style: italic;
+}
+
+
 ul {
     list-style: none;
 }
@@ -145,35 +150,36 @@ header h2 {
     background: #ffffff;
 }
 
-#pizza {
-    width: 400px;
-}
-
 .portfolio .btn {
-    color: #fefae0;
-    border: 1px solid #003554;
-    background: #003554;
+    color: #FF3A20;
+    border: 1px solid #EDFFD9;
+    background: #EDFFD9;
     padding: 5px;
     text-decoration: none;
     border-radius: 8px;
     transition: color 0.5s, background 0.5s;
-    display: inline-block;
+    display: inline-flex;
+    position: relative;
+    left: 5px;
+    bottom: 80px;
 }
 
 .portfolio .btn:hover {
     background: none;
-    color: #003554;
-    /*background: rgba(0,53,84, 0.6);*/
+    color: #EDFFD9;
 }
 
 .project-item {
     overflow: hidden;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-gap: 20px;
     border-bottom: 1px dashed #3C3C3C;
-    padding: 25px 0;
+    padding: 25px 0 0 0;
 }
 
 .project-item img {
-    float: left;
+    width: 100%;
     margin-right: 10px;
 }
 
@@ -241,7 +247,7 @@ header h2 {
 
 /*-------------------------Contact Info------------------------------*/
 .contacts {
-    background: #fefae0;
+    background: #FFFDED;
 }
 
 .contacts h1 {
