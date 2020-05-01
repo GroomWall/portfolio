@@ -219,10 +219,7 @@ header h2 {
 
 /*-------------------------Education------------------------------*/
 .education {
-    background: #B9F978;
-    background-image: url(img/education.jpg);
-    background-size: cover;
-    background-position: top right;
+    background: #576472;
 }
 
 .li-education {
@@ -231,6 +228,10 @@ header h2 {
 
 .education h2 {
     text-align: center;
+}
+
+.education h1 {
+    color: #fefae0;
 }
 
 .education-item p,
@@ -425,7 +426,7 @@ header h2 {
     }
 
     .flag {
-        float:right;
+        float: right;
         padding: 5px;
     }
 }
