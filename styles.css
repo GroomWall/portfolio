@@ -159,15 +159,12 @@ header h2 {
 
 .portfolio .btn {
     color: #fff;
-    border: 1px solid #fff;
-    background: none;
+    border: 1px solid #003554;
+    background: #003554;
     padding: 5px;
     text-decoration: none;
     border-radius: 8px;
     transition: color 0.5s, background 0.5s;
-    position: relative;
-    bottom: 90px;
-    left: 5px;
 }
 
 .portfolio .btn:hover {
@@ -182,19 +179,20 @@ header h2 {
     grid-template-columns:1fr 1fr;
     grid-gap: 20px;
     border-bottom: 1px dashed #3C3C3C;
-    padding: 25px 0 20px 0;
+    padding: 25px 0 10px 0;
 }
 
 .project-item img {
     width: 100%;
-    margin-right: 10px;
-    margin-bottom: 10px;
 }
 
 .project-item h2 {
     text-align: center;
 }
 
+.project-description p {
+    margin-bottom: 10px;
+}
 /*-------------------------Work Experience------------------------------*/
 
 .work {
