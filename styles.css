@@ -219,7 +219,7 @@ header h2 {
 
 /*-------------------------Education------------------------------*/
 .education {
-    background: #D0DDE0;
+    background: #BFCBD0;
 }
 
 .li-education {
@@ -392,6 +392,14 @@ header h2 {
     .flag {
         width: 40px;
     }
+
+    footer .content-wrap {
+        padding: 10px 0;
+    }
+
+    .contacts h1 {
+        padding-bottom: 0;
+    }
 }
 
 @media screen and (max-width: 560px) {
@@ -405,7 +413,6 @@ header h2 {
 
     .header-wrap p {
         font-size: 1em;
-        /*padding-top: 30px;*/
     }
 }
 
@@ -429,7 +436,7 @@ header h2 {
 
 @media screen and (max-width: 440px) {
     .header-wrap p {
-        margin-top: -10px;
+        display: block;
     }
 }
 
@@ -437,11 +444,7 @@ header h2 {
 
     header h1,
     header h2 {
-        padding: 15px 10px 10px 0;
-    }
-
-    .header-wrap p {
-        padding-top: 20px;
+        padding: 10px 0px 25px 0;
     }
 
     h1 {
